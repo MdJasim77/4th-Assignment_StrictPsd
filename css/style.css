@@ -1,0 +1,386 @@
+/* font-family: 'Lato', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h1,h3,h4,h5,h6,body,ul,li,a{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container_1{
+    width: 80%;
+    margin: auto;
+}
+
+/* Header */
+.strict_header {
+    padding: 15px 0px;
+    background: #f6f9f9;
+}
+.header_wrapper{
+    display: flex;
+}
+.logo{
+    width: 50%;
+}
+.logo img{
+    width: 130px;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #2d3950;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* Hero Section */
+.hero_section{
+    background: url(../images/banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.hero_wrapper{
+    text-align: center;
+}
+.hero_wrapper h1{
+    color: white;
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+}
+.hero_wrapper p{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Lato' ,sans-serif;
+}
+.hero_wrapper span{
+    display: block;
+    width: 43%;
+    height: 2px;
+    background: #15a4fa;
+    margin: auto;
+}
+.hero_wrapper button{
+    background: transparent;
+    margin-top: 40px;
+    border: 1px solid #15a4fa;
+    padding: 13px 30px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.hero_wrapper button a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lato' , sans-serif;
+}
+.down_icon{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+.down_icon i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.down_icon{
+    animation: slide_down 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes slide_down{
+    0%{bottom: 90px;}
+    25%{bottom: 80px;}
+    50%{bottom: 70px;}
+    75%{bottom: 60px;}
+    100%{bottom: 50px;}
+}
+
+.hero_wrapper button:hover{background: #15a4fa;}
+
+/* Simple Section */
+.simple_section{
+    padding: 80px 0px;
+    text-align: center;
+    background: #f6f9f9;
+}
+.simple_wrapper{}
+.simple_wrapper h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #2d3950;
+}
+.simple_wrapper p{
+    line-height: 25px;
+    width: 90%;
+    margin: auto;
+    color: #999999;
+}
+/* Feature Section */
+.feature_section{
+    padding: 50px;
+}
+.feature_wrappper{
+    display: flex;
+    justify-content: space-between;
+}
+.feature_box{
+    width: 27%;
+    text-align: center;
+}
+.feature_icon{width: 27%;margin: auto;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+51,5fc3ff+100 */background: #48baff; /* Old browsers */background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 51%, #5fc3ff 100%); /* FF3.6-15 */background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 51%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 *//* display: flex; *//* align-items: center; *//* justify-content: center; */margin-bottom: 15px;}
+.feature_icon i{
+    font-size: 35px;
+    /* margin-bottom: 18px; */
+    color: white;
+    padding: 17px 0px;
+}
+.feature_content{}
+.feature_content h1{
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.feature_content p{
+    font-size: 13px;
+    color: #999999;
+}
+/* Showcase Section */
+.showcase_section{
+    background: #f6f9f9;
+    padding: 50px 0px;
+}
+.showcase_box{
+    width: 30%;
+    position: relative;
+}
+.showcase_box img{
+    max-width: 100%;
+}
+.showcase_box i{}
+.showcase_heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.showcase_heading h1{
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    color: #2d3950;
+    font-weight: 400;
+}
+.showcase_heading p{
+    font-size: 14px;
+    color: #909090;
+}
+.box_icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* margin-right: 0px; */
+}
+.box_icon i {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    display: block;
+    width: 50px;
+    margin-right: 9px;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 2px;
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+.showcase_box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+.showcase_box:hover::before{
+    background: #15a4fad4;
+}
+.showcase_box:hover .box_icon i{
+    transform: scale(1);
+}
+
+.showcase_boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+/* Contact Section */
+.contact_section{
+    padding: 70px 0px;
+    text-align: center;
+    background: url(../images/form1.png);
+    position: relative;
+    z-index: 1;
+}
+.contact_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950db;
+    z-index: -1;
+}
+.contact_header{}
+.contact_header h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 400;
+}
+.contact_header p{
+    color: #999999;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.main_contact{
+    margin-top: 50px;
+}
+.main_contact form{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.main_contact form>input{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #999999;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #999999;
+}
+.main_contact form textarea{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-family: 'Lato', sans-serif;
+    outline:none;
+    color: #999999;
+}
+.check{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+.check input{
+
+}
+.send_button{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.send_button button{
+    padding: 10px 40px;
+    background: transparent;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+}
+.send_button button a{
+    color: white;
+    text-decoration: none;
+}
+.submit_area{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.subscribe {
+    display: inline !important;
+    width: 25px;
+}
+.subscribe~label{
+    color: white;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.send_button button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.send_button button:hover::before{
+    background: #15a4fa;
+}
+/* Footer */
+.footer_wrapper {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+}
+.footer_left{
+    width: 50%;
+}
+.footer_right{
+    width: 50%;
+}
+.footer_right ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.footer_right ul li {
+    margin-left: 4px;
+    width: 35px;
+    background: rgb(21, 164, 250);
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 2px;
+}
+.footer_right ul li a{
+    color: white;
+}
+.footer_left p{
+    color: #999999;
+    font-size: 14px;
+}
